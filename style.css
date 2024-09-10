@@ -1,12 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPGnPWfTUqiMCsKLIUPOrkEZBMDVeB-BmjeA&s') no-repeat center center fixed;
     background-size: cover;
     color: #333;
@@ -30,6 +27,8 @@ h1{
     border: 2px solid brown;
     max-width: 600px;
     border-radius: 5px;
+    outline: none;
+    margin-bottom: 15px;
 }
 
 #search-button {
@@ -42,6 +41,40 @@ h1{
     margin-left: 10px;
     cursor: pointer;
 }
+
+.add-watchlist-button{
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#watchlist-button{
+    padding: 10px 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.remove-watchlist-button{
+    padding: 10px 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 
 #search-button:hover {
     background: #555;
@@ -72,4 +105,42 @@ h1{
 
 .book-item p {
     margin: 5px 0;
+}
+
+.details-button{
+    background-color: rgb(117, 88, 150);
+    padding: 7px;
+    color: white;
+    border-radius: 8px;
+}
+
+#back-button{
+    background-color: rgb(117, 88, 150);
+    padding: 7px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+    .movie-item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .movie-item img {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #search-input {
+        width: calc(100% - 40px);
+    }
+
+    #search-button {
+        width: calc(100% - 20px);
+        margin: 10px 0;
+    }
 }
